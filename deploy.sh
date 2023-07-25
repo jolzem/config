@@ -50,6 +50,11 @@ for option in "$@"; do
       link "$PWD/sway/lock.sh" "$HOME/.config/sway/lock.sh"
       [ -e "$HOME/.config/zsh/variables" ] && link \
         "$HOME/.config/zsh/variables" "$HOME/.config/sway/env"
+      echo "output * bg /usr/share/backgrounds/Sway_Wallpaper_Blue_1920x1080.png fill" \
+        >> $HOME/.config/sway/wallpapers
+      echo "### Output Configuration
+      # get outputs by running: swaymsg -t get_outputs " \
+        >> $HOME/.config/sway/monitors
       ;;
     waybar)
       [ ! -d "$HOME/.config/waybar" ] && mkdir -p "$HOME/.config/waybar"
