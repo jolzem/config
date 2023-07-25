@@ -1,0 +1,33 @@
+[user]
+	name = jolzem
+	email = jolzem@pm.me
+  signingkey = DB5485828E95A447
+
+[credential "https://github.com"]
+	helper =
+  helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+  helper = !/usr/bin/gh auth git-credential
+
+[pull]
+  rebase = false
+
+[core]
+  editor = nvim
+
+[http]
+  sslVerify = false
+
+[credential]
+  helper = store
+
+[init]
+  defaultBranch = main
+
+[commit]
+  gpgsign = true
+
+[safe]
+	directory = /workspace
