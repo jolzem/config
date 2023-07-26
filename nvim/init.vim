@@ -18,7 +18,7 @@ set showmatch " Show matching brackets when text indicator is over them
 set noerrorbells " Silence the error bell
 set novisualbell " Visually hide the error bell
 set encoding=utf8 " Set text encoding as utf8
-set clipboard+=unnamedplus " Use the OS clipboard by default
+set clipboard=unnamedplus " Use the OS clipboard by default
 set showtabline=2 " Use tabline
 set splitright " split to the right instead of left
 set nowrap
@@ -28,15 +28,16 @@ set wildmode=longest,list,full
 " PLUGINS
 " download to ~/.local/share/nvim/site/autoload/plug.vim
 call plug#begin("~/.local/share/nvim/site/autoload/plugged")
-    Plug 'junegunn/goyo.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'https://github.com/jiangmiao/auto-pairs.git'
-    Plug 'lervag/vimtex'
-    Plug 'https://github.com/ap/vim-css-color'
-    Plug 'https://github.com/907th/vim-auto-save.git'
-    Plug 'https://github.com/alvan/vim-closetag'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+  Plug 'junegunn/goyo.vim'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'https://github.com/jiangmiao/auto-pairs.git'
+  Plug 'lervag/vimtex'
+  Plug 'https://github.com/ap/vim-css-color'
+  Plug 'https://github.com/907th/vim-auto-save.git'
+  Plug 'https://github.com/alvan/vim-closetag'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'maxboisvert/vim-simple-complete'
 call plug#end()
 
 let g:vimtex_view_method = 'zathura'
