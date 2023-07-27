@@ -1,0 +1,19 @@
+#!/bin/sh
+
+SELECTION=$(echo "cancel
+logout
+reboot
+shutdown
+suspend" | eval "dmenu $DMENU_COLORS")
+
+case $SELECTION in
+    shutdown )
+        sudo systemctl suspend ;; # systemctl hibernate ;;
+    reboot )
+        sudo systemctl reboot ;;
+    suspend )
+        sudo systemctl suspend ;;
+    logout )
+        swaymsg exit ;;
+esac
+
