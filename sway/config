@@ -14,11 +14,17 @@ set $term alacritty
 set $browser librewolf
 set $files nemo
 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu eval "dmenu_run $DMENU_COLORS -p 'dmenu'"
+
+# SwayFX exclusive config
+blur on
+blur_radius 5
+blur_passes 2
+corner_radius 12
+shadows on
+shadow_blur_radius 20
+shadow_color #0000007F
+default_dim_inactive 0.2
 
 ### Key bindings
 #
