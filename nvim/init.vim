@@ -40,7 +40,7 @@ call plug#begin("~/.local/share/nvim/site/autoload/plugged")
 call plug#end()
 
 let g:vimtex_view_method = 'zathura'
-let g:vimtex_view_forward_search_on_start = 0
+" let g:vimtex_view_forward_search_on_start = 0
 let g:auto_save = 1
 let mapleader =","
 let g:airline#extensions#tabline#enabled = 1
