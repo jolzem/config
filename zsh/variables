@@ -11,6 +11,7 @@ export ZDOTDIR="$HOME"/.config/zsh
 export HISTFILE="${XDG_STATE_HOME}"/bash/history
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 
 export PATH="$PATH:$HOME/.local/bin:/sbin"
 export DMENU_COLORS="-nf '#b0bec5' -nb '#000' -sb '#0a0a0a' -sf '#b0bec5' -fn 'JetBrainsMono Nerd Font-12'"
