@@ -20,7 +20,7 @@ set $menu eval "dmenu_run $DMENU_COLORS -p 'dmenu'"
 blur on
 blur_radius 5
 blur_passes 2
-corner_radius 12
+corner_radius 4
 shadows on
 shadow_blur_radius 20
 shadow_color #0000007F
@@ -70,6 +70,10 @@ default_dim_inactive 0.2
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
     bindsym XF86AudioStop exec playerctl stop
+
+    # Other XF86 Binds
+    bindsym XF86Explorer exec $files
+    bindsym XF86HomePage exec $browser
 #
 # Moving around:
 #
