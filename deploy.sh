@@ -13,8 +13,8 @@ link() {
 
 [ $# -eq 0 ] && help
 
-#command -v git >/dev/null || echo "Install git to run this script" && exit 1
-#command -v curl >/dev/null || echo "Install curl to run this script" && exit 1
+command -v git >/dev/null || (echo "Install git to run this script" && exit 1)
+command -v curl >/dev/null || (echo "Install curl to run this script" && exit 1)
 
 for option in "$@"; do
   case $option in
