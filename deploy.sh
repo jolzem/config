@@ -63,6 +63,9 @@ for option in "$@"; do
       link "$PWD/waybar/config" "$HOME/.config/waybar/config"
       link "$PWD/waybar/style.css" "$HOME/.config/waybar/style.css"
       ;;
+    help)
+      help
+      ;;
     *)
       printf '\033[0;31mno config file found for "%s"\033[0m\n' "$option"
       help
