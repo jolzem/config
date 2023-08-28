@@ -13,8 +13,8 @@ link() {
 
 [ $# -eq 0 ] && help
 
-#command -v git >/dev/null || echo "Install git to run this script" && exit 1
-#command -v curl >/dev/null || echo "Install curl to run this script" && exit 1
+command -v git >/dev/null || (echo "Install git to run this script" && exit 1)
+command -v curl >/dev/null || (echo "Install curl to run this script" && exit 1)
 
 for option in "$@"; do
   case $option in
@@ -25,6 +25,8 @@ for option in "$@"; do
     zsh)
       [ ! -d "$HOME/.config/zsh" ] && mkdir -p "$HOME/.config/zsh"
       link "$PWD/zsh/.zshrc" "$HOME/.config/zsh/.zshrc"
+      link "$PWD/zsh/aliases" "$HOME/.config/zsh/aliases"
+      link "$PWD/zsh/variables" "$HOME/.config/zsh/variables"
       curl -fLo $HOME/.config/zsh/zsh-autosuggestions.zsh --create-dirs \
         https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/zsh-autosuggestions.zsh
       git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.config/zsh/zsh-syntax-highlighting
@@ -60,6 +62,9 @@ for option in "$@"; do
       [ ! -d "$HOME/.config/waybar" ] && mkdir -p "$HOME/.config/waybar"
       link "$PWD/waybar/config" "$HOME/.config/waybar/config"
       link "$PWD/waybar/style.css" "$HOME/.config/waybar/style.css"
+      ;;
+    help)
+      help
       ;;
     *)
       printf '\033[0;31mno config file found for "%s"\033[0m\n' "$option"
