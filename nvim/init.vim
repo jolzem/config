@@ -36,7 +36,6 @@ call plug#begin("~/.local/share/nvim/site/autoload/plugged")
   Plug 'https://github.com/907th/vim-auto-save.git'
   Plug 'https://github.com/alvan/vim-closetag'
   Plug 'vim-airline/vim-airline'
-  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 let g:vimtex_view_method = 'zathura'
