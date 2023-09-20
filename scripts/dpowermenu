@@ -3,12 +3,12 @@
 SELECTION=$(echo "cancel
 logout
 reboot
-shutdown
-suspend" | eval "dmenu $DMENU_COLORS")
+suspend
+shutdown" | eval "dmenu $DMENU_COLORS")
 
 case $SELECTION in
     shutdown )
-        sudo systemctl suspend ;; # systemctl hibernate ;;
+        sudo systemctl poweroff ;;
     reboot )
         sudo systemctl reboot ;;
     suspend )
