@@ -1,0 +1,3 @@
+#!/bin/sh
+
+curl -s "https://cheat.sh/$1" | less -r
