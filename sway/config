@@ -12,7 +12,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 set $browser librewolf
-set $files nemo
+set $files dolphin
 
 set $menu eval "dmenu_run $DMENU_COLORS -p 'dmenu'"
 
