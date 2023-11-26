@@ -39,7 +39,7 @@ draw_bold_text_with_bright_colors: true
 
 bell:
   animation: EaseOutExpo
-  color: '0xffffff'
+  color: '0x282828'
   duration: 1
 
 mouse:
