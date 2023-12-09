@@ -18,7 +18,7 @@ set showmatch " Show matching brackets when text indicator is over them
 set noerrorbells " Silence the error bell
 set novisualbell " Visually hide the error bell
 set encoding=utf8 " Set text encoding as utf8
-set clipboard=unnamedplus " Use the OS clipboard by default
+set clipboard+=unnamedplus " Use the OS clipboard by default
 set showtabline=2 " Use tabline
 set splitright " split to the right instead of left
 set nowrap
