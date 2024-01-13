@@ -20,7 +20,7 @@ for option in "$@"; do
   case $option in
     alacritty)
       [ ! -d "$HOME/.config/alacritty" ] && mkdir -p "$HOME/.config/alacritty"
-      link "$PWD/alacritty/alacritty.yml" "$HOME/.config/alacritty/alacritty.yml"
+      link "$PWD/alacritty/alacritty.toml" "$HOME/.config/alacritty/alacritty.toml"
       ;;
     zsh)
       [ ! -d "$HOME/.config/zsh" ] && mkdir -p "$HOME/.config/zsh"
