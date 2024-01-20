@@ -63,6 +63,12 @@ for option in "$@"; do
       link "$PWD/waybar/config" "$HOME/.config/waybar/config"
       link "$PWD/waybar/style.css" "$HOME/.config/waybar/style.css"
       ;;
+    librewolf)
+      printf 'Paste the path of the Root Directory of your default profile\n'
+      librewolf about:profiles
+      read -r profile
+      link "$PWD/librewolf/user.js" "$profile/user.js"
+      ;;
     help)
       help
       ;;
