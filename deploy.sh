@@ -47,6 +47,10 @@ for option in "$@"; do
       link "$PWD/user-dirs/user-dirs.dirs" "$HOME/.config/user-dirs.dirs"
       xdg-user-dirs-update
       ;;
+    packages)
+      command -v yay >/dev/null || (echo "Install yay to install packages" && exit 1)
+      cat packages/pkgs | yay -S -
+      ;;
     sway)
       [ ! -d "$HOME/.config/sway" ] && mkdir -p "$HOME/.config/sway"
       link "$PWD/sway/config" "$HOME/.config/sway/config"
