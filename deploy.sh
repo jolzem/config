@@ -45,6 +45,7 @@ for option in "$@"; do
       ;;
     user-dirs)
       link "$PWD/user-dirs/user-dirs.dirs" "$HOME/.config/user-dirs.dirs"
+      xdg-user-dirs-update
       ;;
     sway)
       [ ! -d "$HOME/.config/sway" ] && mkdir -p "$HOME/.config/sway"
