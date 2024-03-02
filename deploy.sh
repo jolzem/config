@@ -51,23 +51,6 @@ for option in "$@"; do
       command -v yay >/dev/null || (echo "Install yay to install packages" && exit 1)
       cat packages/pkgs | yay -S -
       ;;
-    sway)
-      [ ! -d "$HOME/.config/sway" ] && mkdir -p "$HOME/.config/sway"
-      link "$PWD/sway/config" "$HOME/.config/sway/config"
-      link "$PWD/sway/lock.sh" "$HOME/.config/sway/lock.sh"
-      [ -e "$HOME/.config/zsh/variables" ] && link \
-        "$HOME/.config/zsh/variables" "$HOME/.config/sway/env"
-      echo "output * bg /usr/share/backgrounds/Sway_Wallpaper_Blue_1920x1080.png fill" \
-        >> $HOME/.config/sway/wallpapers
-      echo "### Output Configuration
-      # get outputs by running: swaymsg -t get_outputs " \
-        >> $HOME/.config/sway/monitors
-      ;;
-    waybar)
-      [ ! -d "$HOME/.config/waybar" ] && mkdir -p "$HOME/.config/waybar"
-      link "$PWD/waybar/config" "$HOME/.config/waybar/config"
-      link "$PWD/waybar/style.css" "$HOME/.config/waybar/style.css"
-      ;;
     librewolf)
       printf 'Paste the path of the Root Directory of your default profile\n'
       librewolf about:profiles
