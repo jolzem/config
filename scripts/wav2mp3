@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Check if any arguments are given
+[ "$#" -eq 0 ] && echo "No input file given" && exit 1
+
+# Check if input file is wav
+file "$1" | grep -q 'WAV' || { echo "Wrong input file given"; exit 1; }
+
+# Use input file name as output file name
+[ "$#" -eq 1 ] && OUTPUT="$(echo $1 | sed 's/\.wav$/.mp3/')"
+
+# Use second argument as output file name
+[ "$#" -eq 2 ] && OUTPUT="$2"
+
+ffmpeg -i $1 -vn -ar 44100 -ac 2 -b:a 192k -f mp3 $OUTPUT
