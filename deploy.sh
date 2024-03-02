@@ -57,6 +57,10 @@ for option in "$@"; do
       read -r profile
       link "$PWD/librewolf/user.js" "$profile/user.js"
       ;;
+    scripts)
+      [ ! -d "$HOME/.local/bin" ] && mkdir -p "$HOME/.local/bin"
+      cp scripts/* "$HOME/.local/bin"
+      ;;
     help)
       help
       ;;
