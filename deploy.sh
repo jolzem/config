@@ -61,6 +61,9 @@ for option in "$@"; do
       [ ! -d "$HOME/.local/bin" ] && mkdir -p "$HOME/.local/bin"
       cp scripts/* "$HOME/.local/bin"
       ;;
+    yay)
+      link "$PWD/yay/config.json" "$HOME/.config/yay/config.json"
+      ;;
     help)
       help
       ;;
