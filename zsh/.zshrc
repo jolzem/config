@@ -18,9 +18,10 @@ autoload -Uz compinit
 compinit -d ~/.cache/zsh/ > /dev/null 2>&1
 _comp_options+=(globdots)  # include hidden files
 
+autoload -U colors && colors
+
 source $HOME/.config/zsh/variables
 source $HOME/.config/zsh/aliases
 source $HOME/.config/zsh/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/gitstatus/gitstatus.prompt.zsh
-export PATH=$PATH:/home/johannes/.spicetify

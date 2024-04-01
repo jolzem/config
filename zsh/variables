@@ -14,4 +14,3 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 export TEXMFVAR="$XDG_CACHE_HOME"/texlive/texmf-var
 
 export PATH="$PATH:$HOME/.local/bin:/sbin"
-export DMENU_COLORS="-nf '#9bacb4' -nb '#031720' -sb '#052838' -sf '#9bacb4' -fn 'JetBrainsMono Nerd Font-12'"
