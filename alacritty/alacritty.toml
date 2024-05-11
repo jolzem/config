@@ -2,7 +2,7 @@ live_config_reload = true
 
 [bell]
 animation = "EaseOutExpo"
-color = "0x1e2326"
+color = "0x1c1d27"
 duration = 1
 
 [colors]
@@ -76,34 +76,34 @@ action = "ScrollToBottom"
 key = "H"
 mods = "Alt"
 
-# Colors (Everforest Dark)
+# Colors
 
 # Default colors
 [colors.primary]
-background = '#1e2326'
-foreground = '#d3c6aa'
+background = '#1c1d27'
+foreground = '#e1e7ec'
 
 # Normal colors
 [colors.normal]
-black   = '#475258'
-red     = '#e67e80'
-green   = '#a7c080'
-yellow  = '#dbbc7f'
-blue    = '#7fbbb3'
-magenta = '#d699b6'
-cyan    = '#83c092'
-white   = '#d3c6aa'
+black   = '#1b1d36'
+red     = '#ca2e55'
+green   = '#53dd6c'
+yellow  = '#fffb85'
+blue    = '#99d6ea'
+magenta = '#fca6d1'
+cyan    = '#bfffbc'
+white   = '#e1e7ec'
 
 # Bright colors
 [colors.bright]
-black   = '#9da9a0'
-red     = '#e67e80'
-green   = '#a7c080'
-yellow  = '#dbbc7f'
-blue    = '#7fbbb3'
-magenta = '#d699b6'
-cyan    = '#83c092'
-white   = '#d3c6aa'
+black   = '#17182c'
+red     = '#f8003e'
+green   = '#3ff15f'
+yellow  = '#fffb85'
+blue    = '#84e1ff'
+magenta = '#ffa3d1'
+cyan    = '#bfffbc'
+white   = '#cee9ff'
 
 [mouse]
 hide_when_typing = true
