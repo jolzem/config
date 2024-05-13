@@ -1,1 +1,1 @@
-doas pacman -Rsn $(pacman -Qdt | awk '{print $1}')
+doas pacman -Qdtq | doas pacman -Rns -
