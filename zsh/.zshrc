@@ -20,7 +20,7 @@ _comp_options+=(globdots)  # include hidden files
 
 autoload -U colors && colors
 
-source $HOME/.config/zsh/variables
+source /etc/zsh/zshenv
 source $HOME/.config/zsh/aliases
 source $HOME/.config/zsh/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
