@@ -26,7 +26,7 @@ for option in "$@"; do
       [ ! -d "$HOME/.config/zsh" ] && mkdir -p "$HOME/.config/zsh"
       link "$PWD/zsh/.zshrc" "$HOME/.config/zsh/.zshrc"
       link "$PWD/zsh/aliases" "$HOME/.config/zsh/aliases"
-      link "$PWD/zsh/variables" "$HOME/.config/zsh/variables"
+      [ -e "/etc/zsh/zshenv" ] && sudo mv /etc/zsh/zshenv /etc/zsh/zshenv.bak && sudo ln -s "$PWD/zsh/zshenv" /etc/zsh/zshenv || sudo ln -s "$PWD/zsh/zshenv" /etc/zsh/zshenv
       curl -fLo $HOME/.config/zsh/zsh-autosuggestions.zsh --create-dirs \
         https://raw.githubusercontent.com/zsh-users/zsh-autosuggestions/master/zsh-autosuggestions.zsh
       git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.config/zsh/zsh-syntax-highlighting

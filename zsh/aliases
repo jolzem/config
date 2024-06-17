@@ -10,6 +10,7 @@ alias cn='clear && neofetch'
 alias live-server='live-server --port=1111 --host=127.0.0.1 --no-css-inject'
 alias pac='doas pacman'
 alias minecraft-launcher='minecraft-launcher --workDir /home/johannes/.local/share/minecraft'
+alias virt-manager='/bin/sudo -i virt-manager'
 # Typos
 alias al="ls -lAh --color=auto"
 alias s=""
