@@ -17,15 +17,15 @@ unfocused_hollow = true
 size = 12.0
 
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "FiraCode Nerd Font"
 style = "Normal"
 
 [font.offset]
@@ -77,34 +77,36 @@ action = "ScrollToBottom"
 key = "H"
 mods = "Alt"
 
-# Colors
+# Colors (Gruvbox dark)
 
 # Default colors
 [colors.primary]
-background = '#1c1d27'
-foreground = '#e1e7ec'
+# hard contrast background = = '#1d2021'
+background = '#282828'
+# soft contrast background = = '#32302f'
+foreground = '#ebdbb2'
 
 # Normal colors
 [colors.normal]
-black   = '#1b1d36'
-red     = '#ca2e55'
-green   = '#53dd6c'
-yellow  = '#fffb85'
-blue    = '#99d6ea'
-magenta = '#fca6d1'
-cyan    = '#bfffbc'
-white   = '#e1e7ec'
+black   = '#282828'
+red     = '#cc241d'
+green   = '#98971a'
+yellow  = '#d79921'
+blue    = '#458588'
+magenta = '#b16286'
+cyan    = '#689d6a'
+white   = '#a89984'
 
 # Bright colors
 [colors.bright]
-black   = '#17182c'
-red     = '#f8003e'
-green   = '#3ff15f'
-yellow  = '#fffb85'
-blue    = '#84e1ff'
-magenta = '#ffa3d1'
-cyan    = '#bfffbc'
-white   = '#cee9ff'
+black   = '#928374'
+red     = '#fb4934'
+green   = '#b8bb26'
+yellow  = '#fabd2f'
+blue    = '#83a598'
+magenta = '#d3869b'
+cyan    = '#8ec07c'
+white   = '#ebdbb2'
 
 [mouse]
 hide_when_typing = true

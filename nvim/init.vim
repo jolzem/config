@@ -37,7 +37,7 @@ call plug#begin("~/.local/share/nvim/site/autoload/plugged")
   Plug 'https://github.com/alvan/vim-closetag'
   Plug 'vim-airline/vim-airline'
   Plug 'https://github.com/github/copilot.vim'
-"  Plug 'https://github.com/morhetz/gruvbox'
+  Plug 'https://github.com/morhetz/gruvbox'
 call plug#end()
 
 let g:vimtex_view_method = 'zathura'
@@ -46,7 +46,7 @@ let g:auto_save = 1
 let mapleader =","
 let g:airline#extensions#tabline#enabled = 1
 
-" color gruvbox
+color gruvbox
 
 " REMAPPING
 " jump to last known position when opening a file
