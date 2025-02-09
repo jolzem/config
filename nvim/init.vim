@@ -1,6 +1,6 @@
 " init autocmd
 autocmd!
-set number relativenumber " Show absolute line numbers on the left.
+set number relativenumber " Show relative line numbers on the left.
 filetype plugin on " Auto-detect un-labeled filetypes
 syntax on " Turn syntax highlighting on
 set ai " Sets auto-indentation
@@ -21,7 +21,9 @@ set encoding=utf8 " Set text encoding as utf8
 set clipboard+=unnamedplus " Use the OS clipboard by default
 set showtabline=2 " Use tabline
 set splitright " split to the right instead of left
-set nowrap
+set textwidth=80 " Limit to 80 characters in width
+set colorcolumn=80 " Colored Column after 80 Characters
+set wrap
 set bg=dark
 set wildmode=longest,list,full
 
@@ -44,6 +46,7 @@ let g:vimtex_view_method = 'zathura'
 let g:auto_save = 1
 let mapleader =","
 let g:airline#extensions#tabline#enabled = 1
+let g:coc_disable_startup_warning = 1
 
 " REMAPPING
 " jump to last known position when opening a file
