@@ -1,1 +1,3 @@
+#!/bin/sh
+
 doas pacman -Qdtq | doas pacman -Rns -
